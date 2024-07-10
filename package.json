@@ -1,7 +1,7 @@
 {
   "name": "kitchenhubstore",
   "private": true,
-  "homepage": "https://TORY-SKY.github.io/kitchenhubstore",
+  "homepage": ".",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
