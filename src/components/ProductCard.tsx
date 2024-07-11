@@ -5,7 +5,7 @@ import ProductInterface from "./ProductInterface";
 const ProductCard: React.FC<ProductInterface> = (data) => {
    const { id, image, name, price } = product.data;
   return (
-    <div className="product-card" key={data.id}>
+    <div className="product-card" key={id}>
       <div className="cardm">
         <span className="like-container">
           <svg
@@ -24,13 +24,13 @@ const ProductCard: React.FC<ProductInterface> = (data) => {
         </span>
         <div className="product-image-div">
           <Link to={"/cartpage"}>
-            <img src={data.image} alt="product" />
+            <img src={image} alt="product" />
           </Link>
         </div>
         <AddtoCartbtn />
         <div className="price-prod-name">
-          <p className="product-name">{data.name}</p>
-          <p className="product-price">${data.price}.00</p>
+          <p className="product-name">{name}</p>
+          <p className="product-price">${price}.00</p>
         </div>
       </div>
     </div>
