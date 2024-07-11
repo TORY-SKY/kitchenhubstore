@@ -1,9 +1,8 @@
 interface ProductInterface {
-  id: number;
+  data: {id: number;
   name: string;
   price: number;
-  image: string;
-  data: {};
+  image: string;};
   key: number;
 }
 export default ProductInterface;
